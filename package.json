@@ -1,0 +1,24 @@
+{
+  "name": "swift-fundamentals",
+  "version": "1.0.0",
+  "description": "Correct, lean, project-consistent Swift and SwiftUI guidance covering performance, view composition, state and data flow, concurrency, and accessibility.",
+  "license": "MIT",
+  "author": "Valerio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vetrek/swift-fundamentals"
+  },
+  "keywords": [
+    "pi-package",
+    "swift",
+    "swiftui",
+    "ios",
+    "apple",
+    "performance",
+    "concurrency",
+    "accessibility"
+  ],
+  "pi": {
+    "skills": ["./swift-fundamentals"]
+  }
+}
