@@ -24,32 +24,36 @@ It fires on phrases like *"build this screen"*, *"this view is slow"*, *"clean t
 
 ## How to use this skill
 
-Pick the install path for your tool. The skill folder is `swift-fundamentals/` at the repo root (it contains `SKILL.md` + `references/`).
+Each tool installs natively via its own manifest. The skill folder is `swift-fundamentals/` at the repo root (it contains `SKILL.md` + `references/`).
 
-### Option A — skills.sh (recommended)
+### Option A — Claude Code
 
-```bash
-npx skills add https://github.com/vetrek/swift-fundamentals --skill swift-fundamentals
-```
-
-### Option B — Claude Code plugin
+Install via the `.claude-plugin/` marketplace:
 
 ```text
 /plugin marketplace add vetrek/swift-fundamentals
 /plugin install swift-fundamentals@swift-fundamentals
 ```
 
-### Option C — Codex
+### Option B — Codex
 
-Codex auto-scans `~/.agents/skills`:
+Install via the `.codex-plugin/plugin.json` manifest. Codex also auto-scans `~/.agents/skills`, so this manual copy works as a fallback:
 
 ```bash
 cp -R swift-fundamentals ~/.agents/skills/swift-fundamentals
 ```
 
-### Option D — Cursor
+### Option C — Cursor
 
-Install via the repo's `.cursor-plugin` manifest, or use the root `AGENTS.md` fallback that points Cursor at the skill.
+Install via the `.cursor-plugin/plugin.json` manifest, or use the root `AGENTS.md` as a per-project fallback that points Cursor at the skill.
+
+### Option D — skills.sh
+
+Generic cross-tool install:
+
+```bash
+npx skills add https://github.com/vetrek/swift-fundamentals --skill swift-fundamentals
+```
 
 ### Option E — Manual
 
