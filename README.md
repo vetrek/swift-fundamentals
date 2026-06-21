@@ -26,7 +26,7 @@ It fires on phrases like *"build this screen"*, *"this view is slow"*, *"clean t
 
 Each tool installs natively via its own manifest. The skill folder is `swift-fundamentals/` at the repo root (it contains `SKILL.md` + `references/`).
 
-### Option A — Claude Code
+### Claude Code
 
 Install via the `.claude-plugin/` marketplace:
 
@@ -35,7 +35,7 @@ Install via the `.claude-plugin/` marketplace:
 /plugin install swift-fundamentals@swift-fundamentals
 ```
 
-### Option B — Codex
+### Codex
 
 Install via the `.codex-plugin/plugin.json` manifest. Codex also auto-scans `~/.agents/skills`, so this manual copy works as a fallback:
 
@@ -43,11 +43,11 @@ Install via the `.codex-plugin/plugin.json` manifest. Codex also auto-scans `~/.
 cp -R swift-fundamentals ~/.agents/skills/swift-fundamentals
 ```
 
-### Option C — Cursor
+### Cursor
 
 Install via the `.cursor-plugin/plugin.json` manifest, or use the root `AGENTS.md` as a per-project fallback that points Cursor at the skill.
 
-### Option D — skills.sh
+### skills.sh
 
 Generic cross-tool install:
 
@@ -55,7 +55,7 @@ Generic cross-tool install:
 npx skills add https://github.com/vetrek/swift-fundamentals --skill swift-fundamentals
 ```
 
-### Option E — Manual
+### Manual
 
 Clone the repo and copy or symlink the `swift-fundamentals/` folder into your agent's skills directory:
 
