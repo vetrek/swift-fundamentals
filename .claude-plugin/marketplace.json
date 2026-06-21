@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/marketplace/marketplace.schema.json",
   "name": "swift-fundamentals",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "owner": {
     "name": "Valerio"
   },
@@ -13,7 +13,7 @@
       "name": "swift-fundamentals",
       "description": "Correct, lean, project-consistent Swift and SwiftUI guidance covering performance, view composition, state, concurrency, and accessibility.",
       "repository": "https://github.com/vetrek/swift-fundamentals",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Valerio"
       },

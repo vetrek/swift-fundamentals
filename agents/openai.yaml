@@ -1,5 +1,5 @@
 name: swift-fundamentals
-version: "1.0.0"
+version: "1.0.1"
 description: >-
   Correct, lean, project-consistent Swift and SwiftUI guidance covering
   performance, view composition, state and data flow, concurrency, and

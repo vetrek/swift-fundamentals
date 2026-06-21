@@ -3,7 +3,7 @@
 A deliberately **lean** Swift + SwiftUI fundamentals skill for any AI coding tool that supports the [Agent Skills open format](https://code.claude.com/docs/en/skills), the anti-bloat counterpart to large SwiftUI skills. It is a small router (`SKILL.md`) plus five focused references that **defer to each project's own architecture and conventions**, encode the rules that hold in *every* Swift project, and gate new-OS APIs behind availability with a strict no-regression rule.
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
+![Version](https://img.shields.io/badge/version-1.0.1-green.svg)
 ![Format: Agent Skills](https://img.shields.io/badge/format-Agent%20Skills-orange.svg)
 
 ## Who this is for
