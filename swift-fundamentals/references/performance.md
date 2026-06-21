@@ -62,6 +62,11 @@ List(sortedItems) { ItemRow(item: $0) }   // sortedItems maintained in the model
   inside a `ScrollView`, never a plain `VStack`/`HStack`: lazy stacks build rows
   only as they scroll into view, while an eager stack instantiates every child up
   front (jank + memory on long content).
+- **Prefer `List` for long homogeneous rows**: it *recycles* off-screen cells, so
+  memory stays flat regardless of scroll depth (and separators / swipe / selection
+  come free). A `LazyVStack` only lazy-*builds* rows and keeps each one alive once
+  scrolled past, so memory grows the further you scroll — reach for it when you need
+  layout or styling `List` can't express.
 
 ## Animations
 
