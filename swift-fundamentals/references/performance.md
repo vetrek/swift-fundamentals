@@ -21,8 +21,10 @@ You have a lever on each:
 A view re-evaluates when something it *reads* changes. Read less, re-run less.
 
 - With `@Observable` (iOS 17+), a view tracks only the **specific properties it
-  touches** in `body`. Pass a sub-object or a single value into a subview instead
-  of the whole model, so the subview only depends on what it shows.
+  touches** in `body` — passing the whole object into a subview is fine; the
+  dependency stays as narrow as what that subview reads. Keep the *reads*
+  narrow, not necessarily the init. For value types and `ObservableObject`,
+  pass the sub-value instead of the whole model.
 - Don't read state you don't render. An unused `@Environment` read or an observed
   property you never display still subscribes you to its churn.
 - Watch for **invalidation storms**: a single high-frequency source
@@ -36,8 +38,10 @@ A view re-evaluates when something it *reads* changes. Read less, re-run less.
 *computation*. Move work out:
 
 - No allocation, sorting, filtering, date/number formatting, regex, or
-  encoding/decoding in `body`. Compute it in the model, in `init`, or cache it;
-  pass the result in.
+  encoding/decoding in `body`. Compute it in the model and pass the result in —
+  **not in the view's `init`**, which is no cheaper (see "Keep view `init`
+  cheap" in `view-structure.md`). For dates and numbers use `Text(_:format:)` —
+  cached and locale-aware.
 - No network or disk I/O in `body`. Load in `.task`/`.onAppear` into state.
 - Inline closures that capture create new identities each pass — fine in
   moderation, costly on a hot path.

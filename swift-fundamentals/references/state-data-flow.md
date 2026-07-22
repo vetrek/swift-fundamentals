@@ -39,8 +39,10 @@ That's both less boilerplate (no `@Published`) and fewer invalidations. Migrate
 when the deployment target allows; otherwise `ObservableObject` + `@Published`.
 
 - Mark stored properties that shouldn't trigger updates `@ObservationIgnored`.
-- Hand a subview the **sub-object or single value** it needs, not the whole model,
-  so its dependency stays narrow (see `performance.md`).
+- Because tracking is per-property, handing a subview the whole `@Observable`
+  object doesn't widen its dependency — it depends only on what its `body`
+  reads. Prefer a sub-object or single value when it makes the view reusable or
+  previewable; it's not required for invalidation (see `performance.md`).
 
 ## Derive, don't store (YAGNI for state)
 

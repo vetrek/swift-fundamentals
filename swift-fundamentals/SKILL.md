@@ -4,7 +4,8 @@ description: >-
   Use when writing, reviewing, or refactoring Swift or SwiftUI code. Covers the
   fundamentals that hold for every Swift project: performance and view
   invalidation, view composition (splitting a body into separate View types
-  instead of computed properties, and why that affects performance), state and
+  instead of computed properties or @ViewBuilder helpers, and why that affects
+  performance), state and
   data flow, concurrency (async/await, actors, Sendable, cancellation),
   accessibility basics (operable controls, Dynamic Type, VoiceOver labels), and
   algorithm/data-structure choices. The goal is correct, lean, project-consistent
