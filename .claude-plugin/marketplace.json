@@ -1,19 +1,19 @@
 {
   "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/marketplace/marketplace.schema.json",
   "name": "swift-fundamentals",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "owner": {
     "name": "Valerio"
   },
   "metadata": {
-    "description": "Swift and SwiftUI fundamentals for performance, view composition, state and data flow, concurrency, accessibility, and algorithm choices."
+    "description": "Project-first Swift and SwiftUI fundamentals: least-code discipline, concurrency, accessibility, performance and algorithms, and how to apply Apple's Xcode agent skills without overriding your project's conventions."
   },
   "plugins": [
     {
       "name": "swift-fundamentals",
-      "description": "Correct, lean, project-consistent Swift and SwiftUI guidance covering performance, view composition, state, concurrency, and accessibility.",
+      "description": "Project-first Swift and SwiftUI fundamentals: least-code discipline, concurrency, accessibility, performance and algorithms, and how to apply Apple's Xcode agent skills without overriding your project's conventions.",
       "repository": "https://github.com/vetrek/swift-fundamentals",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Valerio"
       },

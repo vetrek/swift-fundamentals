@@ -67,7 +67,7 @@ it instead of silencing it:
   warning disappear.
 - `@unchecked Sendable` is a promise *you* now enforce — it's only honest when a
   real lock guards **every** access to the mutable state.
-- Locks (`Mutex`, `OSAllocatedUnfairLock`) are **non-reentrant**: acquiring one
+- Locks (`Mutex` (iOS 18+), `OSAllocatedUnfairLock`) are **non-reentrant**: acquiring one
   you already hold deadlocks/asserts. Never call out to unknown code (a delegate,
   a continuation handler, `onTermination`) while holding the lock — collect under
   the lock, then act after releasing it.

@@ -1,9 +1,9 @@
 name: swift-fundamentals
-version: "1.0.1"
+version: "1.2.0"
 description: >-
-  Correct, lean, project-consistent Swift and SwiftUI guidance covering
-  performance, view composition, state and data flow, concurrency, and
-  accessibility.
+  Project-first Swift and SwiftUI fundamentals: least-code discipline,
+  concurrency, accessibility, performance and algorithms, and how to apply
+  Apple's Xcode agent skills without overriding your project's conventions.
 author:
   name: Valerio
 repository: https://github.com/vetrek/swift-fundamentals

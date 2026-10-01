@@ -6,9 +6,9 @@ This skill gives AI agents the fundamentals that hold for every Swift project. T
 
 This skill covers:
 
-- Performance and view invalidation
-- View composition (splitting a `body` into separate `View` types)
-- State and data flow
+- How to apply Apple's Xcode agent skills without overriding the project's conventions
+- Least-code discipline (reuse before writing, no speculative abstraction)
+- Performance cost model and hot-path isolation
 - Concurrency (async/await, actors, `Sendable`, cancellation)
 - Accessibility basics (operable controls, Dynamic Type, VoiceOver labels)
 - Algorithm and data-structure choices
@@ -19,7 +19,7 @@ This skill does not cover project-specific surface (localization stack, charts, 
 
 ## How to apply
 
-Apply this on any Swift or SwiftUI task, even when the user does not say "optimize" or "review" — whenever you add a view, touch a `body`, write an async function, pick a collection, or reach for an abstraction.
+Apply this on any Swift or SwiftUI task, even when the user does not say "optimize" or "review" — whenever you add a view, consult an Apple skill, write an async function, pick a collection, or reach for an abstraction.
 
 ## Tone
 
